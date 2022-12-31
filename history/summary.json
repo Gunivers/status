@@ -131,18 +131,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/null.ico",
     "slug": "serveurs-minecraft-bedrock",
     "status": "down",
-    "uptime": "16.37%",
-    "uptimeDay": "16.37%",
-    "uptimeWeek": "16.37%",
-    "uptimeMonth": "16.37%",
-    "uptimeYear": "16.37%",
+    "uptime": "0.68%",
+    "uptimeDay": "0.68%",
+    "uptimeWeek": "0.68%",
+    "uptimeMonth": "0.68%",
+    "uptimeYear": "0.68%",
     "time": 0,
     "timeDay": 0,
     "timeWeek": 0,
     "timeMonth": 0,
     "timeYear": 0,
     "dailyMinutesDown": {
-      "2022-12-31": 0
+      "2022-12-31": 10
     }
   },
   {
@@ -151,18 +151,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/glib.gunivers.net.ico",
     "slug": "g-lib-manager",
     "status": "down",
-    "uptime": "7.44%",
-    "uptimeDay": "7.44%",
-    "uptimeWeek": "7.44%",
-    "uptimeMonth": "7.44%",
-    "uptimeYear": "7.44%",
+    "uptime": "0.24%",
+    "uptimeDay": "0.24%",
+    "uptimeWeek": "0.24%",
+    "uptimeMonth": "0.24%",
+    "uptimeYear": "0.24%",
     "time": 0,
     "timeDay": 0,
     "timeWeek": 0,
     "timeMonth": 0,
     "timeYear": 0,
     "dailyMinutesDown": {
-      "2022-12-31": 0
+      "2022-12-31": 10
     }
   },
   {
