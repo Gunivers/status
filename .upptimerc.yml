@@ -15,6 +15,30 @@ sites:
     check: "tcp-ping"
     url: lb.altearn.xyz
     port: 80
+  - name: Panel (Fat Man)
+    url: $PANEL_URL
+  - name: Statistiques des serveurs Minecraft
+    url: $STATS_URL
+  - name: Serveurs Minecraft (Java)
+    check: "tcp-ping"
+    url: play.gunivers.net
+    port: 25565
+    assignees: 
+      - ascpial
+  - name: Serveurs Minecraft (Bedrock)
+    check: "tcp-ping"
+    url: play.gunivers.net
+    port: 19132
+    assignees: 
+      - ascpial
+  - name: GLib Manager
+    url: https://glib.gunivers.net/
+  - name: Dispenser API (Documentation)
+    url: https://dispenser.gunivers.net/
+  - name: Dispenser API (API)
+    url: https://dispenser.gunivers.net/api/versions
+    assignees: 
+      - theogiraudet
 
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
@@ -22,7 +46,7 @@ status-website:
   #cname: demo.upptime.js.org
   baseUrl: /status
   logoUrl: https://altearn.xyz/wp-content/uploads/2020/12/Altearn-Title-Shadow-200x.png
-  name: Altearb
+  name: Altearn Status
   introTitle: "Suivez sur cette page le status en temps réel des serveurs d'Altearn."
   introMessage: Les données sont récupérées en temps réel grâce à Github Actions.
   navbar:
@@ -38,4 +62,71 @@ status-website:
 # Upptime also supports notifications, assigning issues, and more
 # See https://upptime.js.org/docs/configuration
 assignees:
-  - AnandChowdhary
+  - Aeris1One
+
+commitMessages:
+  readmeContent: ":pencil: Mise à jour des status du README [skip ci] [upptime]"
+  summaryJson: ":card_file_box: Mise à jour des rapports [skip ci] [upptime]"
+  statusChange: "$EMOJI $SITE_NAME est $STATUS ($RESPONSE_CODE en $RESPONSE_TIME ms) [skip ci] [upptime]"
+  graphsUpdate: ":bento: Mise à jour des graphes [skip ci] [upptime]"
+  
+commitMessages:
+  commitAuthorName: "Status Bot"
+  commitAuthorEmail: "contact@altearn.xyz"
+  
+i18n:
+  activeIncidents: Incidents en cours
+  allSystemsOperational: Tous les systèmes sont opérationnels
+  incidentReport: "Rapport de l'incident #$NUMBER →"
+  activeIncidentSummary: Ouvert le $DATE avec $POSTS posts
+  incidentTitle: "Détails de l'incident $NUMBER"
+  incidentDetails: "Détails de l'incident"
+  incidentFixed: Réparé
+  incidentOngoing: En cours
+  incidentOpenedAt: Ouvert à
+  incidentClosedAt: Fermé à
+  incidentViewOnGitHub: "Voir et s'abonner sur GitHub"
+  incidentCommentSummary: Posté à $DATE par $AUTHOR
+  incidentBack: ← Retour aux incidents
+  pastIncidents: Incidents passés
+  pastIncidentsResolved: Résolu en $MINUTES minutes avec $POSTS posts
+  liveStatus: Status en direct
+  overallUptime: "Uptime totale: $UPTIME"
+  overallUptimeTitle: Uptime totale
+  averageResponseTime: "Temps de réponse moyen: $TIMEms"
+  averageResponseTimeTitle: Temps de réponse moyen
+  sevelDayResponseTime: Temps de réponse sur 7 jours
+  responseTimeMs: Temps de réponse (ms)
+  up: Pas cassé
+  down: Cassé
+  degraded: Presque cassé
+  ms: ms
+  loading: Chargement
+  navGitHub: GitHub
+  footer: Cette page est [open source]($REPO), propulsée par [Upptime](https://upptime.js.org)
+  rateLimitExceededTitle: Limite API dépassée
+  rateLimitExceededIntro: Vous avez dépassé le nombre de requêtes que vous pouvez faire en une heure, vous devrez donc attendre avant d'accéder à nouveau à ce site Web. Alternativement, vous pouvez ajouter un jeton d'accès personnel GitHub pour continuer à utiliser ce site Web.
+  rateLimitExceededWhatDoesErrorMean: Que signifie cette erreur?
+  rateLimitExceededErrorMeaning: Ce site Web utilise l'API GitHub pour accéder à des données en temps réel sur l'état de nos sites Web. Par défaut, GitHub autorise chaque adresse IP 60 requêtes par heure, que vous avez consommées.
+  rateLimitExceededErrorHowCanFix: Comment puis-je résoudre ce problème ?
+  rateLimitExceededErrorFix: Vous pouvez attendre encore une heure et la limite de votre adresse IP sera restaurée. Alternativement, vous pouvez ajouter votre jeton d'accès personnel GitHub, ce qui vous donne 5 000 requêtes supplémentaires par heure.
+  rateLimitExceededGeneratePAT: Apprenez comment créer un jeton d'accès personnel
+  rateLimitExceededHasSet: Vous avez un jeton d'accès personnel
+  rateLimitExceededRemoveToken: Retirer un jeton d'accès personnel
+  rateLimitExceededGitHubPAT: Jeton d'accès personnel GitHub
+  rateLimitExceededCopyPastePAT: Copier et coller votre jeton
+  rateLimitExceededSaveToken: Sauvegarder votre jeton
+  errorTitle: Une erreur est survenue
+  errorIntro: Une erreur s'est produite lors de la tentative d'obtention des derniers détails des status.
+  errorText: Réessayez dans quelques instants
+  errorHome: Aller à la page d'accueil
+  pastScheduledMaintenance: Maintenances prévues passées
+  scheduledMaintenance: Maintenances prévues
+  scheduledMaintenanceSummaryStarted: Démarrée à $DATE pour $DURATION minutes
+  scheduledMaintenanceSummaryStarts: Démarrera à $DATE pour $DURATION minutes
+  startedAt: Démarrée à
+  startsAt: Démarrera à
+  duration: Durée
+  durationMin: $DURATION minutes
+  incidentCompleted: Complétée
+  incidentScheduled: Prévue
