@@ -25,12 +25,12 @@ sites:
     port: 25565
     assignees: 
       - ascpial
-  - name: Serveurs Minecraft (Bedrock)
-    check: "tcp-ping"
-    url: play.gunivers.net
-    port: 19132
-    assignees: 
-      - ascpial
+#  - name: Serveurs Minecraft (Bedrock)
+#    check: "tcp-ping"
+#    url: play.gunivers.net
+#    port: 19132
+#    assignees: 
+#      - ascpial
   - name: GLib Manager
     url: https://glib.gunivers.net/
   - name: Dispenser API (Documentation)
